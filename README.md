@@ -1,4 +1,5 @@
-# qbot
+# 待补充
+## qbot
 Qbot Botnet. Telnet botnet, most powerfull and strong botnet. requirements: 2 linux server.
 
 yum install wget git gcc python2 python3 tar bzip2 
