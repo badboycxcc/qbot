@@ -18,7 +18,7 @@ gcc -o server server.c -pthread
 
 
 screen ./server port1 port2 port3
-screen ./server 2323  7777 10000
+screen ./server 2323  6666 7777
 
 port3 > port2
 
