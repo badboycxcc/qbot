@@ -17,19 +17,19 @@ if yourafag.lower() == "y":
 else:
     get_arch = False
 
-compileas = ["ntpd", #mips
-             "sshd", #mipsel
-             "openssh", #sh4
-             "bash", #x86
-             "tftp", #Armv6l
-             "wget", #i686
-             "cron", #ppc
-             "ftp", #i586
-             "pftp", #m68k
-             "sh",
-			 "' '",
-			 "apache2",
-			 "telnetd"]
+compileas = ["mips", #mips
+             "mipsel", #mipsel
+             "sh4", #sh4
+             "x86", #x86
+             "arm6l", #Armv6l
+             "i686", #i686
+             "ppc", #ppc
+             "i586", #i586
+             "m68k", #m68k
+             "sparc",
+	     "arm4l",
+	     "arm5l",
+	     "ppc440"]
 
 getarch = ['http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2',
 'http://uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mipsel.tar.bz2',
